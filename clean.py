@@ -29,8 +29,8 @@ states_distribution = {
     'Perak': 0.4,
     'Perlis': 0.5,
     'Putrajaya': 0.3,
-    'Sabah': 0.05,
-    'Sarawak': 0.05,
+    'Sabah': 0.03,
+    'Sarawak': 0.03,
     'Selangor': 0.8,
     'Terengganu': 0.4,
     'WP Kuala Lumpur': 0.3
@@ -63,3 +63,5 @@ df.to_csv('datasets/OrderReport.csv', index=False)
 # count the number of different states
 count = df['State'].value_counts()
 print(count)
+
+

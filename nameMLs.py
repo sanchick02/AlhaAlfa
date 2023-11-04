@@ -124,7 +124,8 @@ accuracy = accuracy_score(y_test, y_pred)
 
 print(f"Model Accuracy: {accuracy}")
 
-new_names = df2['Customer'].tolist()
+# new_names = df2['Customer'].tolist()
+new_names = ['Lee Mann Heyy']
 new_name_features = name_vectorizer.transform(new_names)
 new_name_features = new_name_features.toarray()
 
