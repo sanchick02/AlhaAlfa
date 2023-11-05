@@ -28,7 +28,5 @@ df2.to_csv('datasets/OrderReport.csv', index=False)
 print(df2.head())
 print(df2['Age'].value_counts())
 
-# transfer the gender column from OrderReport_withGender.csv to OrderReport.csv
-df3 = pd.read_csv('OrderReport_withGender.csv')
 
 
