@@ -1,7 +1,7 @@
 import pandas as pd
 import random
 
-df2 = pd.read_csv('datasets/OrderReport.csv')
+df2 = pd.read_csv('datasets/OrderReport_archive.csv')
 
 # create an age column for the dataset to give the customers age
 # create an age distribution from  25 to 45
@@ -23,7 +23,7 @@ sampled_age = random.choices(age_distribution, weights=age_distribution_percenta
 df2['Age'] = sampled_age
 
 # Save the DataFrame to a CSV file
-df2.to_csv('datasets/OrderReport.csv', index=False)
+df2.to_csv('datasets/OrderReport_archive.csv', index=False)
 
 print(df2.head())
 print(df2['Age'].value_counts())

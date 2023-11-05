@@ -3,7 +3,7 @@ import random
 import json
 
 # Load your dataset
-df = pd.read_csv('datasets/OrderReport.csv')
+df = pd.read_csv('datasets/OrderReport_archive.csv')
 
 # Malaysian States
 states = ['Johor', 'Kedah', 'Kelantan', 'Labuan', 'Melaka', 'Negeri Sembilan', 'Pahang', 'Penang', 'Perak', 'Perlis', 'Putrajaya', 'Sabah', 'Sarawak', 'Selangor', 'Terengganu', 'WP Kuala Lumpur']
@@ -38,4 +38,4 @@ sampled_states = random.choices(states, weights=states_distribution.values(), k=
 df['State'] = sampled_states
 
 # Save the DataFrame to a CSV file
-df.to_csv('datasets/OrderReport.csv', index=False)
+df.to_csv('datasets/OrderReport_archive.csv', index=False)

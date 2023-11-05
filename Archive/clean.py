@@ -3,7 +3,7 @@ import random
 import json
 
 # Load your dataset
-df = pd.read_csv('datasets/OrderReport.csv')
+df = pd.read_csv('datasets/OrderReport_archive.csv')
 
 # Load JSON data from multiple files
 json_data = []
@@ -58,7 +58,7 @@ sampled_states = random.choices(states, weights=states_distribution.values(), k=
 df['State'] = sampled_states
 
 # Save the DataFrame to a CSV file
-df.to_csv('datasets/OrderReport.csv', index=False)
+df.to_csv('datasets/OrderReport_archive.csv', index=False)
 
 # count the number of different states
 count = df['State'].value_counts()

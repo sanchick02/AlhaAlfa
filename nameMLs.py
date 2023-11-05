@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-df2 = pd.read_csv('datasets/OrderReport.csv')
+df2 = pd.read_csv('datasets/OrderReport_archive.csv')
 
 df = pd.read_csv('datasets/MalaysianNames.csv')
 
@@ -46,7 +46,7 @@ X_train, X_test, y_train, y_test = train_test_split(name_features, df["gender"],
 # accuracy = accuracy_score(y_test, y_pred)
 # print(f"Model Accuracy: {accuracy}")
 #
-# # test the model with new names from name column in OrderReport.csv
+# # test the model with new names from name column in OrderReport_archive.csv
 # new_names = df2['Customer'].tolist()
 # new_name_features = name_vectorizer.transform(new_names)
 # new_name_features = new_name_features.toarray()
@@ -72,7 +72,7 @@ X_train, X_test, y_train, y_test = train_test_split(name_features, df["gender"],
 #
 # print(f"Model Accuracy: {accuracy}")
 #
-# # test the model with new names from name column in OrderReport.csv
+# # test the model with new names from name column in OrderReport_archive.csv
 # new_names = df2['Customer'].tolist()
 # new_name_features = name_vectorizer.transform(new_names)
 # new_name_features = new_name_features.toarray()
@@ -98,7 +98,7 @@ X_train, X_test, y_train, y_test = train_test_split(name_features, df["gender"],
 #
 # print(f"Model Accuracy: {accuracy}")
 #
-# # test the model with new names from name column in OrderReport.csv
+# # test the model with new names from name column in OrderReport_archive.csv
 # new_names = df2['Customer'].tolist()
 # new_name_features = name_vectorizer.transform(new_names)
 # new_name_features = new_name_features.toarray()
@@ -124,8 +124,8 @@ accuracy = accuracy_score(y_test, y_pred)
 
 print(f"Model Accuracy: {accuracy}")
 
-# new_names = df2['Customer'].tolist()
-new_names = ['Lee Mann Heyy']
+new_names = df2['Customer'].tolist()
+# new_names = ['Lee Mann Heyy']
 new_name_features = name_vectorizer.transform(new_names)
 new_name_features = new_name_features.toarray()
 
@@ -138,7 +138,12 @@ print(new_names_pred)
 print("Total number of M: ", new_names_pred.tolist().count('M'))
 print("Total number of F: ", new_names_pred.tolist().count('F'))
 
-# create a column for gender in OrderReport.csv and put in the gender for respective names and save as new csv
+# create a column for gender in OrderReport_archive.csv and put in the gender for respective names and save as new csv
+
+df2.to_csv()
+
+
+
 
 
 
