@@ -1,0 +1,36 @@
+for demographics
+# train a model using k-means for customer segmentation based on customer type, age, gender, and state
+kmeans = KMeans(n_clusters=3, random_state=42)
+print(kmeans.fit(trainset))
+# predict the clusters for the testset
+y_pred = kmeans.predict(testset)
+print(y_pred)
+# plot the clusters
+plt.scatter(testset['Age'], testset['State_enc'], c=y_pred, cmap='rainbow')
+plt.xlabel('Age')
+plt.ylabel('State')
+plt.show()
+
+# Evaluate the model
+from sklearn.metrics import silhouette_score
+print(silhouette_score(testset, y_pred))
+
+for inventory management
+# Choose a Model (Random Forest Regressor)
+# from sklearn.ensemble import GradientBoostingRegressor
+
+# # Choose a Model (Gradient Boosting Regressor)
+# model = GradientBoostingRegressor()
+
+# # Train the model
+# model.fit(X_train_scaled, y_train)
+
+# # Make predictions on the test set
+# y_pred = model.predict(X_test_scaled)
+
+# # Evaluate the model
+# mae = mean_absolute_error(y_test, y_pred)
+# mse = mean_squared_error(y_test, y_pred)
+
+# print(f'Mean Absolute Error (Gradient Boosting): {mae}')
+# print(f'Mean Squared Error (Gradient Boosting): {mse}')
