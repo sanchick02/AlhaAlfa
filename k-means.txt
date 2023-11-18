@@ -34,3 +34,36 @@ for inventory management
 
 # print(f'Mean Absolute Error (Gradient Boosting): {mae}')
 # print(f'Mean Squared Error (Gradient Boosting): {mse}')
+
+
+
+# # Use DBSCAN to find the best state to open a new branch
+# from sklearn.cluster import DBSCAN
+# from sklearn.preprocessing import StandardScaler
+#
+# # Feature scaling
+# scaler = StandardScaler()
+# mall_performance[['N. Revenue (formatted)']] = scaler.fit_transform(mall_performance[['N. Revenue (formatted)']])
+# print(mall_performance.head())
+#
+# # Initialize DBSCAN with eps=0.5 and min_samples=5
+# dbscan = DBSCAN(eps=0.5, min_samples=5)
+#
+# # Fit the model
+# dbscan.fit(mall_performance[['N. Revenue (formatted)']])
+# print(dbscan)
+#
+# # Predict the clusters
+# clusters = dbscan.fit_predict(mall_performance[['N. Revenue (formatted)']])
+# print(clusters)
+#
+# # Visualize the clusters
+# plt.scatter(mall_performance['State'], mall_performance['N. Revenue (formatted)'], c=clusters, cmap='viridis')
+# plt.xlabel('State')
+# # 90 degree rotation
+# plt.xticks(rotation=90)
+# plt.ylabel('N. Revenue')
+# plt.show()
+#
+# # Evaluate the model
+# print(silhouette_score(mall_performance[['N. Revenue (formatted)']], clusters))
