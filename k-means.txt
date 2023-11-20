@@ -1,9 +1,6 @@
 for demographics
 # train a model using k-means for customer segmentation based on customer type, age, gender, and state
-kmeans = KMeans(n_clusters=3, random_state=42)
-print(kmeans.fit(trainset))
-# predict the clusters for the testset
-y_pred = kmeans.predict(testset)
+
 print(y_pred)
 # plot the clusters
 plt.scatter(testset['Age'], testset['State_enc'], c=y_pred, cmap='rainbow')
