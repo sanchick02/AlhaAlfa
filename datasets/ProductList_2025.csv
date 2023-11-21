@@ -1,4 +1,4 @@
-Product,SKU,Past Items sold,Conversion rate,Past Stock,Price,Past Revenue,Past Percentage increase of item sales,Past Percentage increase of revenue,Past Percentage increase of inventory orders,Predicted items sold 2025,Predicted inventory orders 2025,Predicted revenue 2025,Percentage increase of item sales 2025,Percentage increase of revenue 2025,Percentage increase of inventory orders 2025
+Product,SKU,Past Items sold,Conversion rate,Past Stock,Price,Past Revenue,Past Percentage increase of item sold,Past Percentage increase of revenue,Past Percentage increase of inventory orders,Predicted items sold 2025,Predicted inventory orders 2025,Predicted revenue 2025,Percentage increase of item sold 2025,Percentage increase of revenue 2025,Percentage increase of inventory orders 2025
 LIP BOOSTER - WATERMELON,95,2827,0.89,3176,33.84,77799,9.15,22.96,38.15,3110,3494,105242,10.01,35.27,10.01
 LIP BOOSTER - STRAWBERRY,96,2806,0.89,3152,34.42,78483,9.48,23.07,38.25,3087,3468,106254,10.01,35.38,10.03
 COLLAGEN SERUM FOUNDATION ALHA ALFA - MEDIUM,98,1178,0.94,1253,8.67,8717,10.4,17.24,24.68,1295,1377,11227,9.93,28.79,9.9
